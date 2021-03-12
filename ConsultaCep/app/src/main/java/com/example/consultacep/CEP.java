@@ -10,8 +10,8 @@ public class CEP {
         return logradouro;
     }
 
-    public void setLogradouroç(String logradouroç) {
-        this.logradouro = logradouroç;
+    public void setLogradouroç(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getBairro() {
