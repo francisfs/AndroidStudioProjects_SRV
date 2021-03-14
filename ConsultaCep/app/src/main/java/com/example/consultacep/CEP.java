@@ -5,6 +5,7 @@ public class CEP {
     private String bairro;
     private String localidade;
     private String uf;
+    private String cep;
 
     public String getLogradouro() {
         return logradouro;
@@ -38,13 +39,22 @@ public class CEP {
         this.uf = uf;
     }
 
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
     @Override
     public String toString(){
         return
         "Logradouro: " + getLogradouro()
         + "\nBairro: " + getBairro()
         + "\nCidade: " + getLocalidade()
-        + "\nEstado: " + getUf();
+        + "\nEstado: " + getUf()
+        + "\nCEP: " + getCep();
 
     }
 

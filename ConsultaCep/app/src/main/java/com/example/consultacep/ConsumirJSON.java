@@ -31,7 +31,7 @@ public class ConsumirJSON extends AsyncTask<Void, Void, CEP> {
             connection.connect();
             Scanner scanner = new Scanner(url.openStream());
             while (scanner.hasNext()) {
-                resposta.append(scanner.next());
+                resposta.append(scanner.nextLine());
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();
